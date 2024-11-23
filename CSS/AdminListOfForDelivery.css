@@ -30,12 +30,14 @@ body, html {
     color: white;
 }
 
+.undo-btn{
+    background-color: red;
+}
+
 .edit-btn:hover, .undo-btn:hover, .id-btn:hover{
     opacity: 0.8;
     cursor: pointer;
 }
-
-
 
 .id-btn{
     width: 100px;

@@ -22,7 +22,20 @@ body, html {
     box-sizing: border-box;
 }
 
+.undo-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 0px;
+    color: white;
+    background-color: red;
+}
 
+
+.undo-btn{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 @media all and (max-width: 1470px)
 {
