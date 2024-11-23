@@ -1,0 +1,583 @@
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    overflow-x: hidden;
+    width: 101%;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.content_container{
+    background-color: #007057;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.option-class{
+    display: flex;
+    height: 5rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#option-items{
+    font-size: large;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color:#007057;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+
+#option-items .option-categories{
+    color: white;
+}
+
+#option-items:hover{
+    cursor: pointer;
+}
+
+
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+    .content_container{
+        background-color: #007057;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+
+@media all and (max-width: 580px)
+{
+    .address{
+        padding-left: 10px;
+    }
+}
+/************************************************************************************ PURCHASE CONTAINER *********************************************************************/
+.purchase-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #007057;
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+}
+
+.order-info-div{
+    width: 50rem;
+    background-color: white;
+    /* height: 35rem; */
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+
+.place-order-btn-div form {
+    height: 60%;
+    width: 100%;
+    background-color: rgb(240,240,240);
+    outline: 0px;
+    border: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amount_to_pay{
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    outline: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.place-order-btn-div button{
+    height: 40%;
+}
+
+.place-order-btn-div button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.overall-div h4{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+/*TODO */
+.place-order-btn-div{
+    display: flex;
+    height: 8rem;
+    width: 50rem;
+    background-color: black;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order-title{
+    width: 50rem;
+}
+
+@media all and (max-width: 1450px)
+{
+    .place-order-btn-div, .order-info-div, .order-title{
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 900px)
+{
+    .place-order-btn-div, .order-info-div, .order-title{
+        width: 90%;
+    }
+    
+}
+
+.order-title{
+    background-color: orange;
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+
+
+.purchase-details{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    height: 8rem;
+    margin-top: 1.5rem;
+    border-width: 1.5px 0; /* Sets top and bottom border to 10px, left and right border to 0 */
+    border-style: solid; /* Ensures the borders are visible */
+    border-color: rgb(150,150,150); 
+}
+
+.child-details{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+    /* background-color: red; */
+    justify-content: center;
+
+}
+
+.purchase-details p {
+    margin: 0; /* Remove default margin from paragraphs */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85,85,85);
+    font-size: 12px;
+    margin-left: 1rem;
+}
+
+.address{
+    background-color: rgb(240,240,240);
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.address_icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+    background-color: rgb(240,240,240);
+    align-items: flex-end;
+}
+
+.address_icons .addImg{
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 5%;
+}
+
+.address_icons img:last-child{
+    margin-bottom: 0;
+}
+
+.address_info h4{
+    font-weight: normal;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.45rem;
+    margin-left: 1rem;
+}
+
+
+
+.address_info h4:last-child{
+    margin-bottom: 0;
+}
+
+.address_info{
+    display: block;
+    height: 100%;
+    width: 75%;
+    background-color: rgb(240,240,240);
+    /* background-color: #93ffd5; */
+}
+
+.edit_address{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(240,240,240);
+}
+
+.edit_address button{
+    width: 100%;
+    height: 3rem;
+    background-color: transparent;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+}
+
+.order_summary
+{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.order_summary_title{
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    background-color: rgb(240,240,240);
+    align-items: center;
+    
+}
+
+.order_summary_title h4{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(25,25,25);
+    margin-left: 5%;
+}
+
+.order_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    background-color: rgb(240,240,240)
+}
+
+.order_content h4{
+    margin-left: 10%;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+
+.order_qty_unit{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(240,240,240);}
+
+.order_desc{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(240,240,240);
+    display: flex;
+    flex-direction: column;
+}
+
+.order_qty_unit_child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+    background-color: rgb(240,240,240);
+}
+
+.order_qty_unit_child h4{
+    margin-left: 30%;
+}
+
+.order_desc h4{
+    margin-left: 0px!important;
+}
+
+.order_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(240,240,240);
+
+}
+
+.order_total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(240,240,240);
+
+} 
+
+.order_total h4{
+    font-weight: normal;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10%;
+}
+
+.amount_summary{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.amount_title{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(240,240,240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.amount_title h4{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(100,100,100);
+    margin-left: 10%;
+}
+
+.amount_summary .h42{
+    margin-top: 0.7rem;
+}
+
+.total_amount{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(240,240,240);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.total_amount h4{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    margin-right: 5%;
+    justify-self: center;
+}
+
+.payment
+{
+    margin-top: 1rem;
+    height: 5.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment_detail_title{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(240,240,240);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.payment_detail_title h4{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.payment_method h4{
+    color: rgb(85,85,85);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.payment_method{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(240,240,240);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.place-order-div{
+    height: 8rem;
+    width: 50rem;
+    background-color: rgb(240,240,240);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+#overall_payment{ 
+    font-size: 18px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+#overall_pay_label{
+    font-size: 16px;
+    color: rgb(85,85,85);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    font-weight: 1px;
+}
+
+.overall-div{
+    background-color: black;
+    height: 40%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.overall-label-div
+{
+    background-color: rgb(240,240,240);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overall-amount-div
+{
+    background-color: rgb(240,240,240);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+
+.summary-of-orders{
+    background-color: #93ffd5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+}
+
+.summary-of-items{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.summary-of-total{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    
+}
+
+#place-order-btn
+{
+    height: 60%;
+    width: 90%;
+    background-color: #ffb400;
+    border-radius: 5px;
+    outline: 0px;
+    border: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -1,0 +1,314 @@
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    overflow-x: hidden;
+    width: 101%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.content_container{
+    background-color: #007057;
+    width: 100%;
+    height: 88.2vh;
+    display: flex;
+}
+
+
+.option-class{
+    display: flex;
+    height: 5rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#option-items{
+    font-size: large;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color:#007057;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+#option-items .option-categories{
+    color: white;
+}
+
+#option-items:hover{
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 1470px)
+{
+    
+}
+
+
+
+
+@media all and (max-width: 834px){
+  
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+   
+}
+
+@media all and (max-width: 480px){
+   
+}
+
+/************************************************************************************ PURCHASE CONTAINER *********************************************************************/
+.purchase-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #007057;
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.cart-title{
+    background-color: orange;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.cart-info-div{
+    width: 50rem;
+    background-color: white;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 45rem;
+    overflow: auto; 
+}
+
+.purchase-details{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    height: 8rem;
+    margin-top: 1rem;
+    border-width: 1.5px 0; /* Sets top and bottom border to 10px, left and right border to 0 */
+    border-style: solid; /* Ensures the borders are visible */
+    border-color: rgb(150,150,150); 
+}
+
+.child-details{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+    /* background-color: red; */
+    justify-content: center;
+    
+
+}
+.purchase-details p {
+    margin: 0; /* Remove default margin from paragraphs */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85,85,85);
+    font-size: 12px;
+    margin-left: 1rem;
+}
+
+.child-details #item_to_purchase
+{
+    font-weight: bolder;
+    color: rgb(35,35,35);
+    font-size: 20px;
+}
+
+.child-details #qty
+{
+    font-weight: bold;
+    color: rgb(55,55,55);
+    font-size: 16px;
+}
+
+.purchase-details #total_price
+{
+    font-weight: bolder;
+    color: rgb(55,55,55);
+    font-size: 18px;
+}
+
+.additional-details{
+    display: flex;
+    height: auto;
+    width: 40%;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+
+.price-details{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.price-details p{
+    margin-right: 2.1rem;
+}
+
+.action-buttons, .button-methods{
+    height: 50%;
+    width: 100%;
+    /* background-color: forestgreen; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.action-buttons button{
+    background-color: transparent;
+    color: rgb(0, 179, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    height: 60%;
+    width: 50%;
+    border: 0px;
+    outline: 0px;
+}
+
+.action-buttons button:hover{
+    cursor: pointer;
+}
+
+#image-src-div{
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    align-items: stretch;
+}
+
+#image-src-div img{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.checkout-div{
+    height: 4rem;
+    width: 50rem;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-width: 2px 0; /* Sets top and bottom border to 10px, left and right border to 0 */
+    border-style: solid; /* Ensures the borders are visible */
+    
+    border-color: orange; /* Adjust color as needed */
+}
+
+.checkout-div button{
+    height: 60%;
+    width: 10rem;
+    background-color: #ffb400;
+    border-radius: 5px;
+    outline: 0px;
+    border: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 1rem;
+}
+
+.checkout-div button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.overall-div h4{
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.checkout-btn-div{
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#overall_payment{ 
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ff7b00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#overall_pay_label{
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overall-div{
+    /* background-color: red; */
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    margin-right: 1rem;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+#success_overlay, #logout_successful{
+    position: fixed;
+    top: 7rem;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(250, 165, 0);
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    opacity: 1;
+    transition: opacity 2s ease-in-out; ; 
+}
+
+#success_overlay h2, #logout_successful h2{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+

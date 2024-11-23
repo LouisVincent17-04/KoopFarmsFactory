@@ -1,0 +1,59 @@
+body, html {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    max-width: 100%;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+.content_container{
+    background-color: #007057;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+
+@media all and (max-width: 1470px)
+{
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100vw;
+    }
+}
+
+
+@media all and (max-width: 834px){
+
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+
+}
+
+
+
+
+
+@media all and (max-width: 480px){
+  
+
+}

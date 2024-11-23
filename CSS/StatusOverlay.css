@@ -1,0 +1,83 @@
+#success_overlay{
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(250, 165, 0);
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    opacity: 1;
+    transition: opacity 2s ease-in-out; 
+    padding-left: 20px;
+}
+
+#success_overlay h2{
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+#error_overlay {
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    background-color: red;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+}
+
+#error_overlay h2{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+#error_overlay button{
+    color: white;
+    font: bolder;
+    font-size: 20px;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: space-between!important;
+}
+
+.message_field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    /* background-color: #ffb400; */
+}
+
+.exit_field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    /* background-color: blue; */
+    justify-content: flex-end;
+}
+
+#error_icon{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        .product-details {
+            text-align: center;
+            margin: 50px;
+        }
+        .product-details img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <img id="product-image" src="" alt="Product Image">
+        <h1 id="product-name"></h1>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const productDetails = JSON.parse(localStorage.getItem('productDetails'));
+            if (productDetails) {
+                document.getElementById('product-image').src = productDetails.image;
+                document.getElementById('product-name').innerText = productDetails.name;
+                document.getElementById('product-price').innerText = productDetails.price;
+                document.getElementById('product-description').innerText = productDetails.description;
+            }
+        });
+    </script>
+</body>
+</html>

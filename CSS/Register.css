@@ -1,0 +1,1182 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007057;
+    display: block;
+    justify-content: center;
+}
+
+.cart_class2{
+    display: none;
+}
+
+.parent-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    max-height: 750px;
+    margin-top: 7rem;
+}
+/*
+By setting max-width: 400px; on the .container, the container will take up to 400px if the screen allows it. 
+However, if the screen is smaller, the container will shrink to fit the available width, while keeping the content centered.
+The width: 100%; ensures that the container will adjust its size to fit the width of its parent element 
+(in this case, the viewport) up to the maximum width specified by max-width.*/
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.credentials_button #register{
+    color: #3ff8cf;
+}
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#registrationForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007057;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #00b990;
+}
+
+.social-register {
+    display: grid;
+    place-items: center; /* Center the entire grid both horizontally and vertically */
+    grid-template-columns: 1fr; /* Create a single column layout */
+    gap: 0.3rem; /* Optional: Add space between the items */
+}
+
+
+.social-register #or_label{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.social-register button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.google-button:hover{
+    background-color: #c23321;
+}
+
+.google-button:hover span{
+    color: white;
+}
+
+.facebook-button:hover span{
+    color: white;
+}
+
+.facebook-button:hover {
+    background-color: #365899;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    border: 1px solid #ccc !important;
+    margin-bottom: 10px;
+}
+
+
+.google-button span {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: center; /* Center the text horizontally */
+    color: #555;
+}
+
+.google-button .gmail-icon {
+    width: 30px; /* Adjust the width of the image */
+    height: 30px; /* Adjust the height of the image */
+    margin-left: 5px; /* Optional: Add margin to create space between the icon and text */
+    
+}
+
+.existing_account{
+    background-color: white;
+    display: grid;
+    grid-auto-flow: column; /* Arrange items in a row */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Center the items horizontally within the container */
+    gap: 0.2rem; /* Optional: Add some space between the elements */
+}
+/*
+    display: grid; turns the .container into a grid container
+    grid-auto-flow: column; arranges the child elements (h4 and button) in a row
+    align-items: center; vertically centers the h4 and button within the container.
+    justify-content: center; centers the h4 and button horizontally within the container.
+    gap: 1rem; adds a space between the h4 and button. You can adjust the value as needed.
+*/
+.facebook-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    border: 1px solid #ccc !important;
+    margin-bottom: 10px;
+}
+
+
+.facebook-button span {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: center; /* Center the text horizontally */
+    color: #555;
+}
+
+.facebook-button .facebook-icon {
+    width: 35px; /* Adjust the width of the image */
+    height: 35px; /* Adjust the height of the image */
+    margin-left: 3px; /* Optional: Add margin to create space between the icon and text */
+    
+}
+
+
+.existing_account button {
+    background: none;
+    border: none;
+    color: #007057; /* Set color to match link color */
+    text-decoration: underline; /* Add underline to mimic link */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    position: relative;
+}
+
+#exist_acc_label{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+@media (max-width: 600px) 
+{
+    .container {
+        padding: 15px; /*PADDING THE CONTAINER ENSURES THAT THERE WILL BE SPACES OR MARGIN-LIKE BEHAVIOR TO COMPONENTS INSIDE*/
+    }
+
+    .form-group input, .form-group button, .social-register button {
+        padding: 8px;
+    }
+}
+
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar_div {
+    background-color: #015d48;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center items vertically */
+    position: fixed;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*
+Parent - Child relationship
+align items = vertical
+justify content = horizontal
+*/
+
+.hamburger_cont{
+    display: none;
+}
+
+.buttons {
+    background-color: transparent;
+    height: 7rem;
+    width: 60%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.credentials_button{
+    height: 7rem;
+    background-color: transparent;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    
+}
+
+.credentials_button ul{
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    margin-left: 1rem; 
+    width: 100%; 
+    align-items: center; 
+}
+
+.cart_class{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cart_class #cart-btn{
+    background-color: transparent;
+    height: 3rem;
+    width: 3.5rem;
+    border: none;
+}
+
+.cart_class #shop-img{
+    height: 1.8rem;
+}
+
+.cart_class #cart-btn:hover{
+    cursor: pointer;
+}
+
+/*  */
+
+/* @media all and (max-width: 1470px)
+{
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 7rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cart-btn2{
+        display: flex;
+        height: 4rem;
+        width: 5rem;
+        margin-right: 4rem;
+        background-color: transparent;
+        border-width: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+    .cart_class2{
+        height: 100%;
+        width: 33.333333%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }    
+
+    #shop-img2{
+        height: 3rem;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .search2{
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 45rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100vw;
+    }
+
+    
+
+    .hamburger_cont button{
+        margin-left: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 50%;
+        width: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .hamburger_cont button:hover{
+        cursor: pointer;
+        background-color: #007057;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+        width: 33.333333%;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+        margin-left: 0.1%;
+        background-color: red;
+    }
+
+
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch; 
+        border-width: 10px;
+    }
+
+    .product_image img{
+        height: 22rem;
+        margin-top: 4rem;
+        margin-right: 4rem;
+    }
+
+    .navbar_div .buttons, .credentials_button{
+        display: none;
+    }
+
+    .intro_text{
+        margin-left: 0%;
+        width: 50%;
+    }
+
+    .intro_text .content h3{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 2.7rem;
+        font-stretch: ultra-condensed;
+        justify-content: center;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+
+    .intro_text .content p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        margin-top: 0px;
+        justify-content:center;
+        text-align: center;
+    }
+} */
+
+
+.navbar_div {
+    background-color: #015d48;
+    /* background-color: red; */
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center items vertically */
+    position: fixed;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.dropdown-content{
+    display: none;
+    width: 0px;
+}
+
+/*
+Parent - Child relationship
+align items = vertical
+justify content = horizontal
+*/
+
+.hamburger_cont{
+    display: none;
+}
+
+.buttons {
+    background-color: transparent;
+    height: 7rem;
+    width: 60%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.credentials_button{
+    height: 7rem;
+    background-color: transparent;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.credentials_button ul{
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    margin-left: 1rem; 
+    width: 100%; 
+    align-items: center; 
+}
+
+.logo_div{
+    background-color: transparent;
+    display: flex;
+    width: 15%;
+    height: 7rem;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.logo_div #kff_logo{
+    height: 5rem;
+    width: 9.8rem;
+    margin-left: 2rem;
+}
+
+
+
+.buttons ul{
+    display: flex; 
+    flex-direction: row; 
+    list-style: none;
+    padding: 0;
+    margin-left: 2rem; 
+    width: 100%; 
+    align-items: center;
+    /* background-color: red;  */
+}
+
+.buttons li a, .credentials_button li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+}
+
+
+.buttons ul #login{
+    margin-left: 10rem;
+}
+
+
+#search_box{
+    height: 2.5rem;
+    border: none;
+    width: 20rem;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 25rem;
+    /* background-color: red; */
+
+}
+
+
+#search_img{
+    height: 1rem;
+}
+
+#search_box:focus{
+    border: none;
+    outline: none;
+    background-color: rgba(250,255,250,255);
+}
+
+#submit{
+    background-color: #ffb400;
+    border: none;
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.logo_div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.logo_div h1{
+    color: #93ffd5;
+
+}
+
+
+@media all and (max-width: 1480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 7rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .search2{
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 45rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    #cart-btn2{
+        display: flex;
+        height: 4rem;
+        width: 5rem;
+        margin-right: 4rem;
+        background-color: transparent;
+        border-width: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+    .cart_class2{
+        height: 100%;
+        width: 33.333333%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }    
+
+    #shop-img2{
+        height: 3rem;
+    }
+    
+    #shop-img{
+        display: none;
+    }
+
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    .hamburger_cont button{
+        margin-left: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 50%;
+        width: 5rem;
+        font-size: 2.5rem;
+        
+    }
+
+    .hamburger_cont button:hover{
+        cursor: pointer;
+        background-color: #007057;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+        margin-right: 0rem;
+    }
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        border-width: 10px;
+    }
+
+    .navbar_div .buttons, .credentials_button{
+        display: none;
+    }
+
+    .hamburger_cont{
+        width: 33.333333%;    
+        
+    }
+
+    .cart_class2{
+    }
+}
+
+
+@media all and (max-width: 1400px)
+{
+  
+    .dropdown-content{
+        display: none;
+        background-color: rgba(1,85,70, 0.99);
+        min-width: 100%;
+        margin-top: 7rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+}
+
+@media all and (max-width: 1071px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 33.33333%;
+        
+    }
+
+    .hamburger_cont button{
+        margin-left: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 50%;
+        width: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .hamburger_cont button:hover{
+        cursor: pointer;
+        background-color: #007057;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.33333%;
+    }
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        border-width: 10px;
+    }
+
+    .navbar_div .buttons, .credentials_button{
+        display: none;
+    }
+
+
+    .cart_class2{
+        width: 33.3333%;
+        display: flex;
+    }
+
+    .hamburger_cont{
+        width: 33.33333%;
+    }
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+    .navbar_div {
+    background-color: #015d48;
+    height: 5rem;
+    width: 105%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    position: relative;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+        background-color: transparent;
+        width: 50%;
+        margin-right: 5rem;
+    }
+
+    .logo_div #kff_logo{
+        height: 4rem;
+        width: 8rem;
+    }
+    .hamburger_cont{
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+}
+
+
+@media all and (max-width: 480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+
+    .navbar_div {
+   
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        border-width: 10px;
+        background-color: #015d48;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .credentials_button{
+        display: none;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: transparent;
+        width: 20%;
+        justify-content: center;
+    }
+
+    .hamburger_cont .hamburger{
+        display: flex;
+        justify-self: center;
+        width: 3rem;
+    }
+
+    .logo_div{
+        width: 60%;
+    }
+    
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 10px;
+    }
+
+    .cart_class2{
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #cart-btn2{
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shop-img2{
+        height: 2.5rem;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+
+    .content{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .hamburger_cont button{
+        display: flex;
+        margin-left: 0px;
+        background-color: transparent;
+        justify-content: center;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        
+    }
+    
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 10px;
+        
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 834px){
+    body{
+        display: block;
+        background-color: #007057;
+    }
+
+    .container{
+        width: 90%;
+        margin: 10px;
+        max-height: 650px;
+    }
+
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+  
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        position:sticky;
+    }
+
+
+}
+
+.container{
+    width: 100vw;
+    
+}
+
+
+/* ERROR CSS*/
+#error_overlay, #error_overlay2 {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    background-color: red;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+}
+
+#error_overlay h2, #error_overlay2 h2{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+#error_overlay button, #error_overlay2 button{
+    color: white;
+    font: bolder;
+    font-size: 20px;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: space-between!important;
+}
+
+.message_field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    /* background-color: #ffb400; */
+}
+
+.exit_field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    /* background-color: blue; */
+    justify-content: flex-end;
+}
+
+#error_icon{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+#success_overlay{
+    position: fixed;
+    top: 7rem;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(250, 165, 0);
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    opacity: 1;
+    transition: opacity 2s ease-in-out; ; 
+}
+
+#success_overlay h2{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}

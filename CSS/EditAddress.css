@@ -1,0 +1,621 @@
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 100%;
+}
+
+.delivery_details{
+    width: 60rem;
+    display: block;
+    overflow: scroll;
+    position: relative;
+}
+
+
+.content_container{
+    background-color: #007057;
+    width: 100%;
+    height: 88.2vh;
+    display: flex;
+}
+
+
+.option-class{
+    display: flex;
+    height: 5rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#option-items{
+    font-size: large;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color:#007057;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+#option-items .option-categories{
+    color: white;
+}
+
+#option-items:hover{
+    cursor: pointer;
+}
+
+
+/************************************************************************************ PURCHASE CONTAINER *********************************************************************/
+
+.address-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #007057;
+    width: 100%;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+}
+
+
+
+
+.delivery-details-title{
+    height: 4rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.name_number_details{
+    height: 4rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.address_title{
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.address_details{
+    height: 4rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.building_house_no_details{
+    height: 8rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.label_as_title{
+    height: 3rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.label_as_details{
+    height: 3rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:white;
+}
+
+.action_buttons{
+    height: 6rem;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    background-color:white;
+}
+
+
+
+
+.delivery-details-title h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+input, select{
+    height: 2.5rem;
+    border-width: 1.5px;
+    outline: transparent;
+}
+
+
+.name_number_details #full_name{
+
+    margin-right: 1.5rem;
+    margin-left: 2rem;
+    width: 30rem;
+
+}
+
+.name_number_details #phone_number{
+    width: 15rem;
+}
+
+.address_title h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 2rem;
+    width: 15rem;
+}
+
+.address_details select, input{
+    width: 15rem;
+    margin-right: 2rem;
+    padding: 10px;
+}
+
+.address_details #municipality{
+    margin-left: 2rem;
+}
+
+
+.building_house_no_details #additional_add_info{
+    margin-left: 2rem;
+    width: 56rem;
+    height: 80%;
+}
+
+
+
+.label_as_title{
+    background-color: white;
+    display: flex;
+    height: 1.5rem;
+}
+
+.label_as_title h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.label_as_details{
+    background-color: white;
+    display: flex;
+    height: 2rem;
+    
+}
+
+.label_as_details input{
+    height: 20px;
+    width: 20px;
+    margin-left: 1rem;
+}
+
+
+
+.label_as_details label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 46, 46);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.action_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.action_buttons button{
+    height: 2.5rem;
+    width: 10rem;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.action_buttons #cancel_address{
+    background-color: transparent;
+    color: black;
+}
+
+.action_buttons #submit_address{
+    background-color:#ffb400;
+}
+
+#error_overlay {
+    position: fixed;
+    top: 7rem;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+}
+
+#error_overlay h2{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#error_overlay button{
+    color: white;
+    font: bolder;
+    font-size: 20px;
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: space-between!important;
+}
+
+.message_field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    /* background-color: #ffb400; */
+}
+
+.exit_field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    /* background-color: blue; */
+    justify-content: flex-end;
+}
+
+#error_icon{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+
+@media all and (max-width: 1470px)
+{
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .delivery_details{
+        margin-top: 40px;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    #cart-btn2{
+        display: flex;
+        height: 4rem;
+        width: 5rem;
+        margin-right: 4rem;
+        background-color: transparent;
+        border-width: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+    .cart_class2{
+        height: 100%;
+        width: 33.333333%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }    
+
+    #shop-img2{
+        height: 3rem;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .search2{
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 45rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 100, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100vw;
+    }
+
+    
+
+    .hamburger_cont button{
+        margin-left: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 50%;
+        width: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .hamburger_cont button:hover{
+        cursor: pointer;
+        background-color: #007057;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+        width: 33.333333%;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+        margin-left: 0.1%;
+    }
+
+
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch; 
+        border-width: 10px;
+    }
+
+    .product_image img{
+        height: 22rem;
+        margin-top: 4rem;
+        margin-right: 4rem;
+    }
+
+    .navbar_div .buttons, .credentials_button{
+        display: none;
+    }
+
+    .intro_text{
+        margin-left: 0%;
+        width: 50%;
+    }
+
+    .intro_text .content h3{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 2.7rem;
+        font-stretch: ultra-condensed;
+        justify-content: center;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+
+    .intro_text .content p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        margin-top: 0px;
+        justify-content:center;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .delivery_details{
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        height: auto;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+
+    .building_house_no_details, .name_number_details, .address_details, .label_as_details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: flex-start; 
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .delivery_details input, select{
+        height: 3rem;
+    }
+
+
+    .name_number_details #full_name, .name_number_details #phone_number,
+    .address_details #municipality, .address_details #barangay, .address_details #purok_sitio,
+    .building_house_no_details #additional_add_info{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 3rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .building_house_no_details #additional_add_info{
+        height: 5rem;
+    }
+
+    .label_as_details{
+        flex-direction: column;
+    }
+
+    .label_as_details .label-div{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .action_buttons button{
+        height: 2.5rem;
+        color: white;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+ 
+
+ 
+
+
+
+    
+}
+
+
+@media all and (max-width: 834px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+
+        
+    }
+
+    .delivery_details{
+        margin-top: 10px;
+    }
+
+    .content_container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:#007057;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .option-class{
+        margin-top: 0px;
+    }
+}
+
+.container{
+    width: 100vw;
+}
+
+@media (orientation:landscape) and (max-height: 700px)
+{
+
+    .content_container{
+        background-color: #007057;
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        max-height: 600px;
+        height: 600px;
+    }
+
+    .address-container{
+        margin-bottom: 20px;
+    }
+}
+
+
+@media all and (max-width: 480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+}
+

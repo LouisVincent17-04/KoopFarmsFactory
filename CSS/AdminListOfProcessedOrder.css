@@ -1,0 +1,95 @@
+body, html {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.content_container{
+    background-color: #007057;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.id-btn, .edit-btn, .undo-btn, .cust-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: orange;
+    border-width: 0px;
+    color: white;
+}
+
+.cust-btn{
+    max-width: 95%;
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+    overflow: hidden;
+    padding-left: 5px;
+    height: 30px;
+}
+
+
+
+.id-btn:hover, .edit-btn:hover, .undo-btn:hover, .cust-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.edit-btn, .undo-btn, .qty-btn{
+    border-width: 0px;
+    background-color: #007057;
+}
+.undo-btn{
+    background-color: red;
+}
+
+@media all and (max-width: 1470px)
+{
+   
+}
+
+
+@media all and (max-width: 834px){
+   
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+  
+}
+
+
+
+
+
+@media all and (max-width: 480px){
+    
+
+}
+
+.qty form input, .qty form button{
+    height: 30px;
+
+}
+
+.qty form input:hover, .qty form button:hover{
+    cursor: pointer;
+}
+
+.qty form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

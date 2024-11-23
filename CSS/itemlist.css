@@ -1,0 +1,930 @@
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    overflow-x: hidden;
+}
+
+.navbar_div {
+    background-color: #015d48;
+    /* background-color: red; */
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center items vertically */
+    margin-top: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.dropdown-content{
+    display: none;
+    width: 0px;
+    
+}
+
+/*
+Parent - Child relationship
+align items = vertical
+justify content = horizontal
+*/
+
+.hamburger_cont{
+    display: none;
+}
+
+
+
+.buttons {
+    background-color: transparent;
+    height: 7rem;
+    width: 60%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.cart_class2{
+    display: none;
+}
+
+
+.credentials_button{
+    height: 7rem;
+    background-color: transparent;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    
+}
+
+.credentials_button ul{
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem; 
+    width: 100%; 
+    align-items: center; 
+}
+
+.cart_class{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.cart_class #cart-btn{
+    background-color: transparent;
+    height: 3rem;
+    width: 3.5rem;
+    border: none;
+}
+
+.cart_class #shop-img{
+    height: 1.8rem;
+}
+
+.cart_class #cart-btn:hover{
+    cursor: pointer;
+}
+
+.logo_div{
+    background-color: transparent;
+    display: flex;
+    width: 15%;
+    height: 7rem;
+    align-items: center;
+}
+
+.logo_div #kff_logo{
+    height: 5rem;
+    width: 9.8rem;
+    margin-left: 2rem;
+}
+
+
+
+.buttons ul{
+    display: flex; 
+    flex-direction: row; 
+    list-style: none;
+    padding: 0;
+    margin-left: 2rem; 
+    width: 100%; 
+    align-items: center; 
+    /* background-color: red; */
+}
+
+.buttons li a, .credentials_button li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+}
+
+.mid_buttons #shop{
+    color: #3ff8cf;
+}
+
+.buttons ul #login{
+    margin-left: 10rem;
+}
+
+
+#search_box{
+    height: 2.5rem;
+    border: none;
+    width: 20rem;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 350px;
+    /* background-color: red; */
+    
+}
+
+
+#search_img{
+    height: 1rem;
+}
+
+#search_box:focus{
+    border: none;
+    outline: none;
+    background-color: rgba(250,255,250,255);
+}
+
+#submit{
+    background-color: #ffb400;
+    border: none;
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.logo_div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.logo_div h1{
+    color: #93ffd5;
+
+}
+
+.content_container{
+    background-color: #007057;
+    width: 100%;
+    display: block;
+}
+
+
+.option-class{
+    display: flex;
+    height: 5rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#option-items{
+    font-size: large;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color:#007057;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+
+#option-items .option-categories{
+    color: white;
+}
+
+#option-items:hover{
+    cursor: pointer;
+}
+
+.dropdown-content a, .dropdown-content .search2, .dropdown-content #login2{
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+@media all and (max-width: 1470px)
+{
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    #cart-btn2{
+        display: flex;
+        height: 4rem;
+        width: 5rem;
+        margin-right: 4rem;
+        background-color: transparent;
+        border-width: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+    .cart_class2{
+        height: 100%;
+        width: 33.333333%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }    
+
+    #shop-img2{
+        height: 3rem;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .search2{
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        justify-content: center;
+        width: 45rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100vw;
+    }
+
+    
+
+    .hamburger_cont button{
+        margin-left: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 50%;
+        width: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .hamburger_cont button:hover{
+        cursor: pointer;
+        background-color: #007057;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+        width: 33.333333%;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+        margin-left: 0.1%;
+    }
+
+
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch; 
+        border-width: 10px;
+    }
+
+    .product_image img{
+        height: 22rem;
+        margin-top: 4rem;
+        margin-right: 4rem;
+    }
+
+    .navbar_div .buttons, .credentials_button{
+        display: none;
+    }
+
+    .intro_text{
+        margin-left: 0%;
+        width: 50%;
+    }
+
+    .intro_text .content h3{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 2.7rem;
+        font-stretch: ultra-condensed;
+        justify-content: center;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+
+    .intro_text .content p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        margin-top: 0px;
+        justify-content:center;
+        text-align: center;
+    }
+}
+
+
+@media all and (max-width: 834px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .dropdown-content a{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        position:sticky;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .credentials_button{
+        display: none;
+    }
+
+    .content_container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:#007057;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .option-class{
+        margin-top: 0px;
+    }
+}
+
+.container{
+    width: 100vw;
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+    .navbar_div {
+    background-color: #015d48;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .dropdown-content{
+        margin-top: 0px;
+        position: relative;
+    }
+    
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+    }
+
+
+
+    .intro_text{
+        margin-left: 0%;
+        width: 50%;
+    }
+
+    .product_image img{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        height: 17rem;
+    }
+
+    .product_image{
+        margin-left: 0px;
+        margin-top: 1rem;
+        height: 50%;
+    }
+
+    .intro_text .content h3{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 2rem;
+        font-stretch: ultra-condensed;
+        margin-bottom: 2%;
+        text-align: center
+    }
+    
+    .intro_text .content p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin-top: 0px;
+        justify-content:flex-start;
+        text-align:justify;
+        
+    }
+
+    .logo_div #kff_logo{
+        height: 4rem;
+        width: 8rem;
+
+    }
+
+    .cart_class2 #cart-btn2{
+        width: 4rem;
+    }
+
+    .cart_class2 #cart-btn2 #shop-img2{
+        height: 2.5rem;
+    }
+
+    #hamburger{
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .hamburger_cont{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .search2{
+        width: 90%;
+    }
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        border-width: 10px;
+
+    }
+
+.intro_text {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+.intro_text .content {
+    background-color: transparent;
+    width: 80%;
+    margin: auto; /* Center content horizontally */
+}
+
+    .buttons{
+        display: none;
+    }
+
+    .credentials_button{
+        display: none;
+    }
+
+    .content{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .content_container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #007057;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .product_image img{
+        height: 15rem;
+        margin-top: 4rem;
+        margin: auto;
+    }
+
+    .intro_text{
+        margin-left: 0%;
+        width: 50%;
+    }
+
+    .intro_text .content h3{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 2.7rem;
+        font-stretch: ultra-condensed;
+        justify-content: center;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+
+    .intro_text .content p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        margin-top: 0px;
+        justify-content:flex-start;
+        text-align: center;
+        
+    }
+}
+
+@media all and (max-width: 450px)
+{
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: transparent;
+        width: 20%;
+    }
+
+    .logo_div{
+        width: 60%;
+
+    }
+    
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 10px;
+    }
+
+    .cart_class2{
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #cart-btn2{
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shop-img2{
+        height: 2.5rem;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+    .intro_text{
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .hamburger_cont button{
+        display: flex;
+        margin-left: 0px;
+        background-color: transparent;
+        justify-content: center;
+    }
+    .dropdown-content{
+        background-color: rgba(1,85,70, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: transparent;
+        width: 20%;
+    }
+
+    .logo_div{
+        width: 60%;
+
+    }
+    
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 10px;
+    }
+
+    .cart_class2{
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #cart-btn2{
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shop-img2{
+        height: 2.5rem;
+    }
+
+    #cart-btn2:hover{
+        cursor: pointer;
+    }
+
+    /* .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-end;
+        background-color: yellow;
+        width: 55rem;
+    } */
+}
+/************************************************************** ITEM-CONTAINER **********************************************************/
+
+.product-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+
+/************************************************************** CHICKEN SHOP **********************************************************/
+.product-item{
+    display: flex;
+    height: 25rem;
+    width: 350px;
+    justify-content: center;
+    margin: 40px 20px;
+    transition: transform 0.3s;
+}
+
+.product-item img{
+    height: 17rem;
+    width: 350px;
+}
+
+
+
+.product-item:hover{
+   transform: scale(1.1);
+}
+
+
+#wood{
+    display: block;
+    width: 100%;
+    height: 7rem;
+}
+
+.description-div{
+    background-image: url('../ImageIcons/wood.jpg');
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 8rem;
+    margin-top: -0.28rem;
+}
+
+.item-description {
+    text-align: center;
+    font-size: 24px; /* Adjust text size */
+    font-weight: bold;
+    text-align: center; /* Center-align the text */
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 10px; /* Optional: Add padding for readability */
+    border-radius: 5px; /* Optional: Add border radius for a rounded effect */
+    max-width: 90%; /* Optional: Constrain the width to ensure readability */
+    line-height: 1.5; /* Optional: Adjust line height for readability */
+    color:  #007057;
+
+}
+
+*{
+    text-decoration: none;
+}
+

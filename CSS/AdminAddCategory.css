@@ -1,0 +1,615 @@
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.navbar_div {
+    background-color: #015d48;
+    /* background-color: red; */
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    position: fixed;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.dropdown-content{
+    display: none;
+    width: 0px;
+}
+
+/*
+Parent - Child relationship
+align items = vertical
+justify content = horizontal
+*/
+
+.hamburger_cont{
+    display: none;
+}
+
+
+
+.buttons {
+    background-color: transparent;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+
+.sub-menu-categories{
+    color: white;
+}
+
+
+
+.logo_div{
+    background-color: transparent;
+    display: flex;
+    width: 15%;
+    height: 7rem;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.logo_div #kff_logo{
+    height: 5rem;
+    width: 9.8rem;
+}
+
+.buttons{
+    /* background-color: black; */
+}
+
+.buttons ul{
+    display: flex; 
+    flex-direction: row; 
+    list-style: none;
+    padding: 0;
+    margin-left: 2rem; 
+    width: 100%; 
+    align-items: center; 
+    /* background-color: yellow; */
+}
+
+.buttons li a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5rem;
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    /* background-color: red; */
+}
+
+/*EDIT BUTTON COLOR HERE*/
+.mid_buttons #products{
+    color: #3ff8cf;
+}
+
+.buttons ul #login{
+    margin-left: 10rem;
+}
+
+.logo_div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.logo_div h1{
+    color: #93ffd5;
+
+}
+
+.content_container{
+    background-color: #007057;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.photoDiv{
+    width: 40rem;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    margin-top: 3rem;
+}
+
+#addPhotoDiv{
+    width: 25rem;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+#addPhotoDiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.attributeDiv{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 3rem;
+
+}
+
+.infoDivs{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* background-color: yellow; */
+}
+
+.infoDiv{
+    width: 50vw;
+    height: 10rem;
+    max-height: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: pink; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    margin-left: 5rem;
+
+}
+
+.infoDiv select, .infoDiv input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 1rem;
+    border-width: 0;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#fileInput{
+    display: none;
+}
+
+
+@media all and (max-width: 1470px)
+{
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 7rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100vw;
+    }
+
+    .hamburger_cont button{
+        margin-left: 4rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 50%;
+        width: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .hamburger_cont button:hover{
+        cursor: pointer;
+        background-color: #007057;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+        width: 33.333333%;
+    }
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+        margin-left: 0.1%;
+    }
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch; 
+        border-width: 10px;
+    }
+
+    .navbar_div .buttons{
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 834px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        position:sticky;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .content_container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #007057;
+        height: 100vh;
+        width: 100vw;
+       
+    }
+}
+
+.container{
+    width: 100vw;
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+    .navbar_div {
+    background-color: #015d48;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+
+    }
+
+    .content_container{
+        background-color: #007057;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .dropdown-content{
+        margin-top: 0px;
+        position: relative;
+        height: 200%;
+    }
+    
+
+    .logo_div{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+        width: 33.333333%;
+    }
+
+    .logo_div #kff_logo{
+        height: 4rem;
+        width: 8rem;
+
+    }
+
+    .cart_class2 #cart-btn2{
+        width: 4rem;
+    }
+
+    .cart_class2 #cart-btn2 #shop-img2{
+        height: 2.5rem;
+    }
+
+    #hamburger{
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .hamburger_cont{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .dropdown-content{
+        display: none;
+        background-color: rgba(3,66,62, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        border-width: 10px;
+
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .content{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .content_container{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #007057;
+        height: 100vh;
+        width: 100%;
+    }
+
+
+}
+
+@media all and (max-width: 450px)
+{
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: transparent;
+        width: 20%;
+    }
+
+    .logo_div{
+        width: 60%;
+
+    }
+    
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 10px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .hamburger_cont button{
+        display: flex;
+        margin-left: 0px;
+        background-color: transparent;
+        justify-content: center;
+    }
+    .dropdown-content{
+        display: none;
+        background-color: rgba(1,85,70, 0.99);
+        min-width: 100%;
+        margin-top: 0rem;
+        height: 75%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        opacity: 100;
+        position: absolute;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-content a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(3, 109, 95, 0.0);
+        font-size: larger;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 5rem;
+    }
+
+    .hamburger_cont{
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: transparent;
+        width: 20%;
+    }
+
+    .logo_div{
+        width: 60%;
+
+    }
+    
+    .navbar_div {
+        background-color: #015d48;
+        height: 7rem;    
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-width: 10px;
+    }
+
+}
+
+#success_overlay, #logout_successful{
+    position: fixed;
+    top: 7rem;
+    left: 0px;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(250, 165, 0);
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    z-index: 1000; /* Ensure it covers other content */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    opacity: 1;
+    transition: opacity 2s ease-in-out; ; 
+}
+
+#success_overlay h2, #logout_successful h2{
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}

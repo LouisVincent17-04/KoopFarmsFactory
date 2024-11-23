@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 36rem; /* Ensures there are 3 boxes per row */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 10rem;
+    margin: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}

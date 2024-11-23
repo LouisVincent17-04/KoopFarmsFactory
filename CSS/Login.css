@@ -1,0 +1,323 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007057;
+    display: block;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+
+.parent-container{
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.LoggedInContainer{
+    display: none;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007057;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #00b990;
+}
+
+.social-register #or_label{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+.social-register button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.google-button:hover{
+    background-color: #c23321;
+}
+
+.google-button:hover span{
+    color: white;
+}
+
+.facebook-button:hover span{
+    color: white;
+}
+
+.facebook-button:hover {
+    background-color: #365899;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    border: 1px solid #ccc !important;
+    margin-bottom: 10px;
+}
+
+
+.google-button span {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: center; /* Center the text horizontally */
+    color: #555;
+}
+
+.google-button .gmail-icon {
+    width: 30px; /* Adjust the width of the image */
+    height: 30px; /* Adjust the height of the image */
+    margin-left: 5px; /* Optional: Add margin to create space between the icon and text */
+    
+}
+
+.facebook-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    border: 1px solid #ccc !important;
+    margin-bottom: 10px;
+}
+
+
+.facebook-button span {
+    flex: 1; /* Allow the text to take up remaining space */
+    text-align: center; /* Center the text horizontally */
+    color: #555;
+}
+
+.facebook-button .facebook-icon {
+    width: 35px; /* Adjust the width of the image */
+    height: 35px; /* Adjust the height of the image */
+    margin-left: 3px; /* Optional: Add margin to create space between the icon and text */
+    
+}
+
+.no_account{
+    background-color: white;
+    display: grid;
+    grid-auto-flow: column; /* Arrange items in a row */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Center the items horizontally within the container */
+    gap: 0.2rem; /* Optional: Add some space between the elements */
+    padding-top: 5%;
+}
+
+.no_account button {
+    background: none;
+    border: none;
+    color: #007057; /* Set color to match link color */
+    text-decoration: underline; /* Add underline to mimic link */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    position: relative;
+}
+
+#no_account_label{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /*PADDING THE CONTAINER ENSURES THAT THERE WILL BE SPACES OR MARGIN-LIKE BEHAVIOR TO COMPONENTS INSIDE*/
+    }
+
+    .form-group input, .form-group button, .social-register button {
+        padding: 8px;
+    }
+}
+
+
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+@media all and (max-width: 1071px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+
+}
+
+
+@media all and (max-width: 480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    .content{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+@media all and (max-width: 1480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll
+    }
+}
+
+
+@media all and (max-width: 834px){
+    body{
+        display: block;
+        background-color: #007057;
+    }
+
+    .container{
+        width: 90%;
+        margin: 10px;
+        max-height: 650px;
+    }
+}
+
+.container{
+    width: 100vw;
+    
+}
+
+
+
+@media all and (max-width: 480px){
+    body{
+        background-color: #007057;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .container{
+        width: 90%;
+        margin: 10px;
+        height: 75%;
+    }
+
+
+    .content{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .container{
+        width: 90%;
+        margin: 10px;
+        height: 80%;
+    }
+
+    .parent-container{
+        max-width: 100%;
+    }
+}
+
+/* ERROR CSS*/
+
+
+
+

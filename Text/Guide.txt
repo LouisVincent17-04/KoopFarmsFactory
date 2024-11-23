@@ -1,0 +1,26 @@
+Order Processes:
+[1] Pending
+[2] Proccess Order
+[3] Order For Delivery
+[4] Delivered
+
+Payment Method:
+[1] Cash on Delivery
+[2] GCash
+[3] Paymaya
+
+Municipality or City Category:
+[1] Municipality
+[2] City
+
+Product or Category Availability:
+[0] Not Available
+[1] Available
+
+User Type:
+[0] Default
+[1] Admin
+
+Product Units:
+[1] KG
+[2] PCS

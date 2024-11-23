@@ -1,0 +1,22 @@
+- Basic to Advanced Programming
+- ALL Object-Oriented Programming Topics
+- Useful Data Structure & Algorithm Topics (Linked List, Hash, Sets, Maps, Stack, Queue)
+- 90% Sorting Algorithms
+- File Handling 
+- Swing and AWT (Software Applications UI)
+- Database (MySQL Workbench)
+- Basic CRUD Operations to Complex Database Queries
+- Development of Applications
+- Collaboration of Programming Languages
+- Python
+- Intro to Game Development
+- Java and Python Game Development
+- Java Networking
+- Java Cryptography
+- Malware Development
+- Game Development + Database
+- Robot Class in Java
+- Java FX (Modern Application Development)
+- AI-Powered Applications
+
+

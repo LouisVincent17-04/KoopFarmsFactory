@@ -1,0 +1,44 @@
+▼ Other Cases
+    ↗ Accessing
+        ► A user cannot go to Login Page and Register Page when he/she is logged in currently. Even when modifying the url
+        ► 
+
+▼ Register
+    ↗ Purpose
+        ► Prompts User to Enter Credentials in order to create an account
+    ↗ Error Message Thrown if These Conditions are Not Followed
+        ► Username must be Unique
+        ► Password must be at least 8 characters
+        ► Password and Confirm Password must be exactly the same
+        ► Any Fields are Empty
+
+▼ Login
+    ↗ Purpose
+        ► Prompts User to Enter Credentials in order to access purchase-related features 
+    ↗ Error Message Thrown if These Conditions are Not Followed
+        ► Username must be Registered
+        ► Username and Password don't Match
+        ► Any Fields are Empty
+
+▼ Shop
+    ↗ Purpose
+       ► Displays the List of Categories in the Shop 
+
+▼ Item List
+    ↗ Purpose
+       ► Displays the List of Items depending on what Category is chosen
+    
+▼ Item Details
+    ↗ Purpose
+       ► Displays the Details of the Chosen Item such as Name, Price, Units, ..etc
+       ► Provides an "Add To Cart" Option 
+    ↗ Redirecting Message Thrown if 
+       ► A user adds an item to the cart but not logged in
+        ► A user adds an item to the cart but not logged in
+       
+▼ Cart
+    ↗ Purpose
+       ► Displays the Details of your cart
+       ► Provides a "Checkout" Option 
+    ↗ Error Message Thrown if 
+       ► A user checks his/her cart but not logged in

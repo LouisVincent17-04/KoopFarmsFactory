@@ -1,0 +1,105 @@
+body, html {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.content_container{
+    background-color: #007057;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+.del-btn, .edit-btn, .avail-btn, .id-btn, .modif-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+    border-width: 0px;
+    color: white;
+}
+
+.del-btn:hover, .edit-btn:hover, .avail-btn:hover, .id-btn:hover, .modif-btn{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.del-btn{
+    background-color: red;
+    margin-left: 10px;
+}
+
+.id-btn, .modif-btn{
+    background-color: orange;
+}
+
+.cat-opt{
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.editable1, .editable2, .editable3{
+    min-height: 30px;
+    min-width: 150px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border-width: 1px;
+}
+
+.editable2, .editable3{
+    min-width: 120px;
+    max-width: 120px;
+}
+
+#addProduct{
+    background-color: transparent;
+    border-width: 0px;
+}
+
+#addProduct:hover{
+    cursor: pointer;
+    color: #007057;
+}
+
+@media all and (max-width: 1470px)
+{
+
+}
+
+
+@media all and (max-width: 834px){
+  
+}
+
+.container{
+    width: 100vw;
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+
+}
+
+
+
+
+
+@media all and (max-width: 480px){
+    
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Transition</title>
+    <style>
+        .fade-div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            opacity: 1;
+            transition: opacity 2s; /* Change 2s to the desired duration */
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-div" id="fadeDiv"></div>
+    <button onclick="fadeOut()">Fade Out</button>
+
+    <script>
+        function fadeOut() {
+            document.getElementById("fadeDiv").classList.add("fade-out");
+        }
+    </script>
+</body>
+</html>

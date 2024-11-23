@@ -1,0 +1,212 @@
+body {
+    background-color: #007057;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.receipt-contents{
+    border-radius: 20px;
+}
+
+.receipt-details{
+    border-top: solid rgb(82, 82, 82) 1px;
+}
+
+.content_container{
+    background-color: #007057;
+    width: 100%;
+    display: block;
+}
+
+
+.option-class{
+    display: flex;
+    height: 5rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#option-items{
+    font-size: large;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color:#007057;
+    color: white;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+
+#option-items .option-categories{
+    color: white;
+}
+
+#option-items:hover{
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 1470px)
+{
+    .returnDiv{
+        margin-bottom: 15px;
+    }
+}
+
+
+@media all and (max-width: 834px){
+    .receipt-contents{
+        max-width: 90%;
+    }
+
+    .option-class{
+        margin-top: 0px;
+    }
+    .returnDiv{
+        margin-bottom: 15px;
+    }
+    
+}
+
+.container{
+    width: 100vw;
+}
+
+@media (orientation:landscape) and (max-height: 600px)
+{
+
+}
+
+@media all and (max-width: 480px){
+
+}
+
+
+.content_container{
+            
+}
+
+.receipt-header{
+    display: flex;
+}
+
+.logo-div{
+    margin: 15px;
+}
+
+.logo-div img{
+    width: 150px;
+    height: 70px;
+}
+
+h3, #sub{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#order-details h3{
+    font-size: 18px;
+}
+
+#payments #sub{
+    font-size: 16px;
+}
+
+.returnDiv, .returnDiv form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.returnDiv{
+    margin-bottom: 15px;
+}
+
+#returnButton{
+    background-color: #ffb400;
+    border: none;
+    width: 90%;
+    height: 2.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-shadow: 0px 0px 6px orange;
+    border-radius: 10px;
+}
+
+#returnButton:hover{
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+.receipt-div{
+    width: 100%;
+    height: 700px;
+    min-height: 400px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    position: absolute;
+    top: 120px;
+    /* background-color: red; */
+}
+
+#rec-contents{
+    overflow-y: scroll;
+}
+
+@media all and (max-width: 800px){
+    
+}
+
+.receipt-contents{
+    max-height: 600px;
+    width: 600px;
+    background-color: white;
+    box-shadow: 1px 1px 6px grey;
+    border-radius: 20px;
+}
+
+.receipt-details{
+    display: flex;
+    flex-direction: row;
+}        
+
+#net-pay{
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left, .right{
+    width: 50%;
+    height: 100%;
+    margin: 20px;
+}
+
+.right{
+    text-align: right;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}

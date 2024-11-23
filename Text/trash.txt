@@ -1,0 +1,4 @@
+full Name
+phone number
+shipping address
+billing address

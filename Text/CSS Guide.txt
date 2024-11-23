@@ -1,0 +1,6 @@
+Display: Block -> Takes the full width of the div and is displayed in a column way
+Display: Flex -> Makes the child flexible and can be assigned into a specific alignment such as justify-content, align-items, and align-content
+Display: Inline -> Places the child side by side
+Display: Inline-Block -> Places the child side by side and width & height can be customized
+
+
