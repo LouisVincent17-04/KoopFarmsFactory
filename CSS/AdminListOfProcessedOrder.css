@@ -39,8 +39,6 @@ body, html {
     height: 30px;
 }
 
-
-
 .id-btn:hover, .edit-btn:hover, .undo-btn:hover, .cust-btn:hover{
     opacity: 0.8;
     cursor: pointer;

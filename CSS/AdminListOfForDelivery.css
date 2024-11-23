@@ -21,11 +21,27 @@ body, html {
     box-sizing: border-box;
 }
 
-.id-btn{
+.edit-btn, .undo-btn{
     width: 100px;
     height: 30px;
     border-radius: 10px;
     background-color: green;
+    border-width: 0px;
+    color: white;
+}
+
+.edit-btn:hover, .undo-btn:hover, .id-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+.id-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: orange;
     border-width: 0px;
     color: white;
 }

@@ -330,7 +330,7 @@
                                                      <input type='hidden' name='processed' value=".$row['processed_by'].">
                                                     <input type='hidden' name ='order_id' id ='order_id' value='".$row['order_id']."'> 
                                                     <input type='hidden' name ='order_stat' id ='order_stat' value='".$row['order_status']."'> 
-                                                    <button type='submit' name ='edit-btn' class='edit-btn' data-id='{$row['order_id']}'>Process Order</button>
+                                                    <button type='submit' name ='edit-btn' class='edit-btn' data-id='{$row['order_id']}'>Delivered</button>
                                                 </form>
                                             </td>
 
