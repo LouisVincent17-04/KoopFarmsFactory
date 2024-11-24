@@ -13,9 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $specid = $_POST["updated_id_$id"];
             $orderid = $_POST["updated_order_id_$id"];
             $price = $_POST["updated_price_$id"];
+            $processed_by = $_POST["updated_processed_by_$id"];
         }
     }
     
+    if($processed_by != $_SESSION['USER_INFO']['user_id'])
+    {
+        header('Location: ../Pages/AdminListOfProcessedOrder.php?error_overlay=show&error_msg=Someone%20Processed%20This%20Order');
+        exit();
+    }
+
     include '../Database/Database.php';
     $current_stocks = retrieveRecords($mysqli, "SELECT product_items.quantity
     FROM order_items 

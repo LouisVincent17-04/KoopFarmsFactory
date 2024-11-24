@@ -149,6 +149,18 @@ if(isset($_SESSION['USER_INFO']))
             $stmt = $mysqli->prepare($sql);
             $stmt->bind_param("iiiddd",$USER, $ORDER_ID, $PROD_ID, $QUANTITY, $PRICE, $TOTAL_PRICE);
             $stmt->execute();
+            
+            $sql = "UPDATE product_items 
+            SET quantity = quantity - ?
+            WHERE product_id = ?";
+            $stmt = $mysqli->prepare($sql);
+            $stmt->bind_param('di', $QUANTITY, $PROD_ID);
+    
+            if ($stmt->execute()) {
+                $stmt->close();
+            } else {
+            
+            }
         }
     }
 }
