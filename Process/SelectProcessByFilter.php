@@ -1,7 +1,5 @@
 <?php
 
-
-
     session_start();
     if(isset($_SESSION['USER_INFO']['user_id']))
     {

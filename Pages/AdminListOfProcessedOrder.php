@@ -460,9 +460,6 @@
             let totalPages = Math.ceil(rows.length / entriesPerPage);
             let processed_by_filter = document.getElementById("processBySelection");
             
-            
-
-
             function filterTable() {
                 const searchTerm = searchInput.value.toLowerCase();
                 rows.forEach(row => {
@@ -528,9 +525,9 @@
             updateTable();
         });
 
-        // document.getElementById('processBySelection').addEventListener('change', function(event) {
-        //     window.location.href = "../Process/SelectProcessByFilter.php?processed_by_filter=" + event.target.value +;
-        // });
+        document.getElementById('processBySelection').addEventListener('change', function(event) {
+            window.location.href = "../Process/SelectProcessByFilter.php?processed_by_filter=" + event.target.value;
+        });
 
 
 </script>
