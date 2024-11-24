@@ -19,6 +19,9 @@
 
             header('Location:../Pages/AdminListOfProcessedOrder.php?processed_by_filter='.$_GET['processed_by_filter']);    
         }
+        else
+        header('Location:../Pages/AdminListOfProcessedOrder.php');  
+
     }
 
 ?>

@@ -51,6 +51,11 @@
             $condition = " orders.order_status = 2  ORDER BY order_id;";
             $processedBy = 3;
         }
+        else
+        {
+            $condition = " orders.order_status = 2  ORDER BY order_id;";
+            $processedBy = 3;
+        }
 
         $sql = "SELECT orders.order_id, orders.order_status, orders.processed_by, users.full_name, product_items.product_name,
         product_items.price_per_unit, product_items.units_used, order_items.id, order_items.quantity, order_items.total_price
