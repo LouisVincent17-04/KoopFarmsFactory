@@ -301,56 +301,77 @@
                                 JOIN orders ON order_items.order_id = orders.order_id
                                 JOIN users ON orders.user_id = users.user_id
                                 JOIN product_items ON order_items.product_id = product_items.product_id
-                                WHERE orders.order_status = 3;";
+                                WHERE orders.order_status = 3 ORDER BY orders.order_id;";
                             }
                                 
                             $result = $mysqli->query($sql);
                             
                             if ($result->num_rows > 0) {
-                                
-                                while ($row = $result->fetch_assoc()) {
+                                $count = 0;
+                                $curr_id = 0;
+                                $prev_id = 0;
+                                while ($row = $result->fetch_assoc()) 
+                                {
                                     $button_stat = 'enabled';
                                     if($_SESSION['USER_INFO']['user_id'] != $row['processed_by'])
                                     $button_stat = "disabled style='opacity: 0.5' ";
-                                    echo "
-                                        <tr id='row-{$row['order_id']}'>
-                                            <td>{$row['order_id']}</td>
-                                            <td>
-                                            <form method='POST' action='AdminUserDetails.php'>
-                                                <input type='hidden' value='".$row['user_id']."'>
-                                                <button class='id-btn'>{$row['user_id']}</button>
-                                            </form>
-                                            </td>
-                                            <td style ='text-overflow: ellipsis; white-space: nowrap; overflow: hidden;'>{$row['product_name']}</td>
-                                            <td>{$row['quantity']} {$row['units_used']}</td>  
-                                            <td>{$row['price_per_unit']}</td>
-                                            <td>{$row['total_price']}</td>
-                                            <td>
-                                                <form action='../Process/UpdateOrderStatus.php' method='POST'>
-                                                     <input type='hidden' name='processed' value=".$row['processed_by'].">
-                                                    <input type='hidden' name ='order_id' id ='order_id' value='".$row['order_id']."'> 
-                                                    <input type='hidden' name ='order_stat' id ='order_stat' value='".$row['order_status']."'> 
-                                                    <button type='submit' name ='edit-btn' class='edit-btn' data-id='{$row['order_id']}'>Delivered</button>
-                                                </form>
-                                            </td>
 
-                                            <td>
-                                                <form action='../Process/UpdateOrderStatus.php' method='POST'>
-                                                     <input type='hidden' name='processed' value=".$row['processed_by'].">
-                                                    <input type='hidden' name ='order_id' id ='order_id' value='".$row['order_id']."'> 
-                                                    <input type='hidden' name ='order_stat' id ='order_stat' value='".$row['order_status']."'> 
-                                                    <button type='submit' name ='undo-btn' class='undo-btn' data-id='{$row['order_id']}'>Undo Action</button>
-                                                </form>
-                                            </td>
-                                            <td class='processed_by'>
-                                                <form method='POST' action='AdminUserDetails.php'>
-                                                    <input type='hidden' name='processed_by' value='".$row['processed_by']."'>
-                                                    <button class='id-btn'>{$row['processed_by']}</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    ";
+                                    $curr_id = $row['order_id'];
 
+                                    if($curr_id != $prev_id && $count == 0)
+                                    {
+                                        echo
+                                        "
+                                            <tr id='row-{$row['order_id']}'>
+                                                <td>{$row['order_id']}</td>
+                                                <td>
+                                                    <form method='POST' action='AdminUserDetails.php'>
+                                                        <input type='hidden' value='".$row['user_id']."'>
+                                                        <button class='id-btn'>{$row['user_id']}</button>
+                                                    </form>
+                                                </td>
+                                        ";
+                                    }
+
+                                    else
+                                    {
+                                        $count = 0;
+                                        echo "
+                                            <tr id='row-{$row['order_id']}'>
+                                                <td> </td>
+                                                <td> </td>";
+                                    }
+                                    echo"
+                                                <td style ='text-overflow: ellipsis; white-space: nowrap; overflow: hidden;'>{$row['product_name']}</td>
+                                                <td>{$row['quantity']} {$row['units_used']}</td>  
+                                                <td>{$row['price_per_unit']}</td>
+                                                <td>{$row['total_price']}</td>
+                                                <td>
+                                                    <form action='../Process/UpdateOrderStatus.php' method='POST'>
+                                                        <input type='hidden' name='processed' value=".$row['processed_by'].">
+                                                        <input type='hidden' name ='order_id' id ='order_id' value='".$row['order_id']."'> 
+                                                        <input type='hidden' name ='order_stat' id ='order_stat' value='".$row['order_status']."'> 
+                                                        <button type='submit' name ='edit-btn' class='edit-btn' data-id='{$row['order_id']}'>Delivered</button>
+                                                    </form>
+                                                </td>
+
+                                                <td>
+                                                    <form action='../Process/UpdateOrderStatus.php' method='POST'>
+                                                        <input type='hidden' name='processed' value=".$row['processed_by'].">
+                                                        <input type='hidden' name ='order_id' id ='order_id' value='".$row['order_id']."'> 
+                                                        <input type='hidden' name ='order_stat' id ='order_stat' value='".$row['order_status']."'> 
+                                                        <button type='submit' name ='undo-btn' class='undo-btn' data-id='{$row['order_id']}'>Undo Action</button>
+                                                    </form>
+                                                </td>
+                                                <td class='processed_by'>
+                                                    <form method='POST' action='AdminUserDetails.php'>
+                                                        <input type='hidden' name='processed_by' value='".$row['processed_by']."'>
+                                                        <button class='id-btn'>{$row['processed_by']}</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        ";
+                                    $prev_id = $curr_id; 
                                 }
                             } else {
                                
